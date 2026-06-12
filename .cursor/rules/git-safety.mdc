@@ -1,0 +1,35 @@
+---
+description: Git safety — commits, pushes, branches, and destructive operations require explicit user approval.
+alwaysApply: true
+---
+
+# Git safety
+
+## Approval required
+
+- Never commit without explicit user approval.
+- Never push without explicit user approval.
+- Never create a pull request without explicit user approval.
+- Never merge without explicit user approval.
+- Never rebase, reset, squash, cherry-pick, or force-push without explicit user approval.
+- Before any git write action, explain the action and ask for confirmation.
+
+## Branch management
+
+- Use the currently checked-out branch by default.
+- Do not create a new branch unless necessary.
+- If the current branch is a protected branch (`main`, `master`, `prod`, `production`, `develop`, `development`):
+  - Inform the user that the branch is protected.
+  - Propose a temporary working branch name.
+  - Ask for confirmation before creating the branch.
+- Never create, switch, delete, rename, merge, or rebase branches without explicit user approval.
+- Treat branch creation as a write operation requiring approval.
+- Prefer reusing the current branch whenever possible.
+
+## Default git behavior
+
+- Stay on the current branch.
+- Make no commits.
+- Create no branches.
+- Perform no remote git operations.
+- Wait for explicit approval before any git modification.

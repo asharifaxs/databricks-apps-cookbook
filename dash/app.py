@@ -146,4 +146,8 @@ app.layout = html.Div([
 ])
 
 if __name__ == '__main__':
-    app.run_server(debug=True)
+    import os
+
+    # Databricks Apps sets PORT (and DATABRICKS_APP_PORT); bind 0.0.0.0 for the proxy
+    port = int(os.environ.get("PORT", os.environ.get("DATABRICKS_APP_PORT", 8050)))
+    app.run_server(host="0.0.0.0", port=port, debug=False)

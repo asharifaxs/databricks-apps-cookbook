@@ -1,0 +1,12 @@
+---
+description: File and workspace safety — destructive file operations require explicit user approval.
+alwaysApply: true
+---
+
+# File safety
+
+- Never delete files or folders without explicit user approval.
+- Never overwrite or replace files in a way that destroys existing content without approval.
+- Treat renames, moves, replacements, and destructive modifications as deletions if content may be lost.
+- Before destructive actions, explain what will change and ask for confirmation.
+- Treat migrations, mass refactors, and bulk file operations as high-risk actions requiring approval.

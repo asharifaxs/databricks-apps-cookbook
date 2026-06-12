@@ -1,0 +1,37 @@
+---
+description: Atlassian (Confluence, Jira) safety — read/search allowed; writes require explicit approval.
+alwaysApply: true
+---
+
+# Atlassian safety
+
+## Confluence
+
+- Confluence is read-only by default.
+- Reading and searching are allowed.
+- Never create, edit, update, move, rename, archive, or delete Confluence pages, spaces, attachments, comments, labels, permissions, templates, or metadata unless the user explicitly instructs you to do so.
+- Before any write operation, explain the intended change and ask for confirmation.
+
+## Jira
+
+- Jira is read-only by default.
+- Reading and searching are allowed.
+- Never create, edit, update, transition, assign, comment on, close, reopen, delete, or otherwise modify Jira issues, epics, stories, tasks, bugs, boards, sprints, backlogs, projects, labels, components, versions, or custom fields unless the user explicitly instructs you to do so.
+- Before any write operation, explain the intended change and ask for confirmation.
+
+## Default Atlassian behavior
+
+| Action   | Allowed     |
+| -------- | ----------- |
+| Read     | Yes         |
+| Search   | Yes         |
+| Analyze  | Yes         |
+| Create   | No          |
+| Update   | No          |
+| Delete   | No          |
+| Assign   | No          |
+| Transition | No        |
+| Comment  | No          |
+| Archive  | No          |
+
+Require explicit approval for every write operation.
